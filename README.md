@@ -202,7 +202,7 @@ A page opens prompting you to Unlock Jenkins. Obtain the required administrator 
 
 __________________________________________________________________________________________________________________________________________________________________________________________
 
-### 3. Configure the Jenkins with the requires plugins for this integration - 1] Apache Maven 2] Articatory plugins
+# 3. Configure the Jenkins with the requires plugins for this integration - 1] Apache Maven 2] Articatory plugins
    
 Navigate to manage jenkins >> Plugins to install the plugins 
 
