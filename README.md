@@ -103,7 +103,7 @@ sudo apt install docker.io openjdk-11-jdk -y
 
 ```
 
-Install Apache Maven to build the project (jar file), 
+### Install Apache Maven to build the project (jar file), 
 go to the apache maven website https://maven.apache.org/download.cgi for the required version of the software
 ```
 sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
@@ -128,3 +128,41 @@ mvn -version
 //  To check the maven version 
 ```
 
+- Let us get the installation done for AWS CLI 2.
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+// To download the AWS Cli -v2 zip file
+
+unzip awscliv2.zip
+// To unzip the downloaded AWSCLI file
+
+sudo ./aws/install
+// To install the AWS CLI file
+
+aws --version
+// To check the AWS CLI version
+```
+
+### Let us install Jenkins
+```
+// First, add the repository key to your system:
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+
+//Next, let’s append the Debian package repository address to the server’s sources.list:
+sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+//After both commands have been entered, run apt update so that apt will use the new repository.
+sudo apt update
+sudo apt install jenkins
+
+//now that Jenkins is installed, start it by using systemctl:
+sudo systemctl start jenkins.service
+
+//Since systemctl doesn’t display status output, we’ll use the status command to verify that Jenkins started successfully:
+sudo systemctl status jenkins
+
+//To set up a UFW firewall, visit Initial Server Setup with Ubuntu 22.04, Step 4- Setting up a Basic Firewall.
+By default, Jenkins runs on port 8080. Open that port using ufw:
+sudo ufw allow 8080
+
+```
