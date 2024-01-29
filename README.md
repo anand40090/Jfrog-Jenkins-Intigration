@@ -89,3 +89,21 @@ After launching your instance, you can connect to it using various methods, such
 You can also use the AWS Systems Manager Session Manager to connect to your instance securely without the need for a public IP address.
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/8866e733-fe83-4850-a3d6-9e624ead0016)
+
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+# 2. Install the required softwares in the system
+
+Now run below codes to setup prerqusites softwares 
+Install the required softwares in the system - 1] Docker engine 2] Apache Maven 3] Java 4] AWS Cli 5] Jfrog Cli 6] Jenkins 7] Docker compose
+Install Docker engine and Openjdk-11
+```
+sudo apt install docker.io openjdk-11-jdk -y //This will install docker engine and openjdk-11
+
+```
+
+Install Apache Maven to build the project (jar file)
+```
+
+```
+
