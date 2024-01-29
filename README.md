@@ -94,7 +94,7 @@ ________________________________________________________________________________
 
 # 2. Install the required softwares in the system
 
-Now run below codes to setup prerqusites softwares 
+Now run below codes to setup prerqusites softwares for the jfrog intgration 
 Install the required softwares in the system - 1] Docker engine 2] Apache Maven 3] Java 4] AWS Cli 5] Jfrog Cli 6] Jenkins 7] Docker compose
 Install Docker engine and Openjdk-11
 ```
@@ -102,8 +102,15 @@ sudo apt install docker.io openjdk-11-jdk -y //This will install docker engine a
 
 ```
 
-Install Apache Maven to build the project (jar file)
+Install Apache Maven to build the project (jar file), go to the apache maven website https://maven.apache.org/download.cgi for the required version of the software
 ```
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip    // to download the maven-3.9.6 version zip file
+sudo apt install unzip      // to install the unzip tool
+sudo unzip apache-maven-3.9.6-bin.zip      // to unzip the dowanloaded zip file
+sudo mv apache-maven-3.9.6 /opt/       // to move the apache maven folder to OPT directory
 
+M2_HOME=/opt/apache-maven-3.9.6       //Setting M2_HOME and Path Variables
+export PATH="$M2_HOME/bin:$PATH"      // Exporting the maven path in user profile
+mvn -version                          //  To check the maven version 
 ```
 
