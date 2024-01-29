@@ -128,7 +128,7 @@ mvn -version
 //  To check the maven version 
 ```
 
-- Let us get the installation done for AWS CLI 2.
+### Let us get the installation done for AWS CLI 2.
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 // To download the AWS Cli -v2 zip file
@@ -165,4 +165,22 @@ sudo systemctl status jenkins
 By default, Jenkins runs on port 8080. Open that port using ufw:
 sudo ufw allow 8080
 
+//Open a web browser, and navigate to your server' IP address. Use the following syntax:
+http://ip_address_or_domain:8080
+
 ```
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/bd4d3fe5-6805-41d5-8de4-8ca4029f5951)
+
+A page opens prompting you to Unlock Jenkins. Obtain the required administrator password in the next step.
+
+2. Obtain the default Jenkins unlock password by opening the terminal and running the following command:
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/5d4def90-a67c-4003-a11f-ac484bf9dac0)
+
+3. The system returns an alphanumeric code. Enter that code in the Administrator password field and click Continue.
+
+4. The setup prompts to either Install suggested plugins or Select plugins to install. It’s fine to simply install the suggested plugins.
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/28542b80-9274-4c64-9792-40731ff7f03e)
+
+
