@@ -15,7 +15,7 @@ ________________________________________________________________________________
 # High level steps 
 
 1. Create EC2 instance, in this case I am using Ubuntu 22.04
-2. Install the required softwares in the system - 1] Docker engine 2] Apache Maven 3] Java 4] AWS Cli 5] Jfrog Cli 6] Jenkins 7] Docker compose
+2. Install the required softwares in the system - 1] Docker engine 2] Apache Maven 3] Java 4] AWS Cli 5] Jfrog Cli 6] Jenkins
 3. Configure the Jenkins with the requires plugins for this integration - 1] Apache Maven 2] Articatory plugins
 4. Configure Jfrog for integration - 1] Create user with admin rights 2] Create access token for admin user 3] Create artifacts repository 
 
@@ -141,6 +141,21 @@ sudo ./aws/install
 
 aws --version
 // To check the AWS CLI version
+```
+### Let us install Jfrog CLI
+```
+wget -qO - https://releases.jfrog.io/artifactory/jfrog-gpg-public/jfrog_public_gpg.key | sudo apt-key add -
+// To add the Jfrog reposiroty key in user profile
+
+echo "deb https://releases.jfrog.io/artifactory/jfrog-debs xenial contrib" | sudo tee -a /etc/apt/sources.list &&    sudo apt update &&
+// Download the Jfrog reposiroty and install it
+
+sudo apt install -y jfrog-cli-v2-jf &&
+// To install the jfrog cli
+
+jf intro
+jf --version
+// To check the jfrog version
 ```
 
 ### Let us install Jenkins
