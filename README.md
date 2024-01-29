@@ -95,8 +95,8 @@ ________________________________________________________________________________
 # 2. Install the required softwares in the system
 
 Now run below codes to setup prerqusites softwares for the jfrog intgration 
-Install the required softwares in the system - 1] Docker engine 2] Apache Maven 3] Java 4] AWS Cli 5] Jfrog Cli 6] Jenkins 7] Docker compose
-Install Docker engine and Openjdk-11
+
+### Install Docker engine and Openjdk-11
 ```
 sudo apt install docker.io openjdk-11-jdk -y
 //This will install docker engine and openjdk-11
