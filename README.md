@@ -144,29 +144,31 @@ aws --version
 ```
 
 ### Let us install Jenkins
+
 ```
-// First, add the repository key to your system:
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+// First, add the repository key to your system:
 
-//Next, let’s append the Debian package repository address to the server’s sources.list:
 sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+//Next, let’s append the Debian package repository address to the server’s sources.list:
 
-//After both commands have been entered, run apt update so that apt will use the new repository.
 sudo apt update
 sudo apt install jenkins
+//After both commands have been entered, run apt update so that apt will use the new repository.
 
-//now that Jenkins is installed, start it by using systemctl:
 sudo systemctl start jenkins.service
+//now that Jenkins is installed, start it by using systemctl:
 
-//Since systemctl doesn’t display status output, we’ll use the status command to verify that Jenkins started successfully:
 sudo systemctl status jenkins
+//Since systemctl doesn’t display status output, we’ll use the status command to verify that Jenkins started successfully:
 
+sudo ufw allow 8080
 //To set up a UFW firewall, visit Initial Server Setup with Ubuntu 22.04, Step 4- Setting up a Basic Firewall.
 By default, Jenkins runs on port 8080. Open that port using ufw:
-sudo ufw allow 8080
 
-//Open a web browser, and navigate to your server' IP address. Use the following syntax:
 http://ip_address_or_domain:8080
+//Open a web browser, and navigate to your server' IP address. Use the following syntax:
+
 
 ```
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/bd4d3fe5-6805-41d5-8de4-8ca4029f5951)
