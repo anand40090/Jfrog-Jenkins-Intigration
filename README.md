@@ -204,21 +204,20 @@ ________________________________________________________________________________
 
 # 3. Configure the Jenkins with the requires plugins for this integration - 1] Apache Maven 2] Articatory plugins
    
-Navigate to manage jenkins >> Plugins to install the plugins 
+- Navigate to manage jenkins >> Plugins to install the plugins 
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/a0f69aeb-e8bb-4e2f-97a2-85bd8ad61cdc)
 
-Find out the available maven and artifactory plugins for installation 
+- Find out the available maven and artifactory plugins for installation 
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/ab996886-74c2-4a8c-b827-44c163be1e76)
 
-6. Configure the Maven tool post maven plugins installation
-
+- Configure the Maven tool post maven plugins installation
 Navigate to manage jenkins >> Tool >> Find out the Maven Installation 
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/546d5ff4-bb73-42e8-89fb-2b8324ab0869)
 
-Give name for your maven tool and define the maven path from your system when maven is installed 
+- Give name for your maven tool and define the maven path from your system when maven is installed 
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/452f40b3-1961-4b29-8ca3-c1318dd92bf0)
 
