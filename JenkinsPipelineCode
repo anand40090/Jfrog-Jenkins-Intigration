@@ -25,7 +25,7 @@ pipeline{
                  id: "Artifactory",
                  url: 'https://practicewell.jfrog.io/artifactory',
                  username: 'admin1',
-                  password: 'Admin1@123',
+                  password: 'XXXXXXX',
                   bypassProxy: true,
                    timeout: 300
                         )
