@@ -21,3 +21,15 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________________________________________________
 
+# Creating Job in Jenkins for Jfrog intigration 
+
+- Dclarative pipeline stages
+  1. Code Checkout >> To get the source code from centralise system (GitHub etc)
+  2. Code build >> To build the code
+  3. Build Package >> To build the packge from the source code
+  4. Server >> To connect with the Jfrog server, using Authetication method
+  5. Upload >> Upload the artifact with ".Jar" extenssion to the Jfrog artifcatory repository
+  6. Publish build info >> Publish that the artifact is uploaded sucessfully on Jfrog
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/6fa54676-5281-496f-8827-1719324566c7)
+
