@@ -18,9 +18,9 @@
 ## 3. Configure Jfrog tool in Jenkins 
 
 - Navigate to Dashboard >> Manage Jenkins >> System >> Find out for Jfrog
-  - Specify the Instance id and make a note of it, it will be used in declarative pipeline.
+  - Specify the Instance id and make a note of it, it will be used in declarative pipeline
+  - Use your Jfrog UI URL for connection
   - User Jfrog Username and Password to authenticate with Jfrog server
-  - Use youe Jfrog UI URL for connection 
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/9661d6a5-28b8-487f-befc-338452b06d16)
 
