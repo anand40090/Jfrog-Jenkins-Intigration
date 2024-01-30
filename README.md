@@ -33,3 +33,4 @@ ________________________________________________________________________________
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/6fa54676-5281-496f-8827-1719324566c7)
 
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/787dcbdc-206d-4a52-8cb3-0ecbc2e80de7)
