@@ -1,0 +1,57 @@
+pipeline{
+    agent any 
+    tools{
+        maven 'M2'
+    }
+    stages{
+         stage ('Code Checkout'){
+            steps{
+                git 'https://github.com/anand40090/springboot-maven-course-micro-svc.git'
+            }
+        }
+        stage ('Code build'){
+            steps{
+                sh 'mvn clean install'
+            }
+        }
+        stage ('Package'){
+            steps {
+                sh 'mvn package'
+             }
+        }
+        stage ('Server'){
+            steps {
+               rtServer (
+                 id: "Artifactory",
+                 url: 'https://practicewell.jfrog.io/artifactory',
+                 username: 'admin1',
+                  password: 'Admin1@123',
+                  bypassProxy: true,
+                   timeout: 300
+                        )
+            }
+        }
+         stage('Upload'){
+            steps{
+                rtUpload (
+                 serverId:"Artifactory" ,
+                  spec: '''{
+                   "files": [
+                      {
+                      "pattern": "*.jar",
+                      "target": "logic-ops-lab-libs-snapshot-local"
+                      }
+                            ]
+                           }''',
+                        )
+            }
+        }
+        stage ('Publish build info'){
+            steps{
+                rtPublishBuildInfo (
+                    serverId: "Artifactory"
+                    )
+            }
+        }
+    }
+}
