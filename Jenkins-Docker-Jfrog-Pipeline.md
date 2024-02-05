@@ -1,7 +1,7 @@
 # Docker image jfrog artifactory intigration using jenkins declarative pipeline
 
 > In this Ci-CD jenkins pipeline, we are building Docker image and pushing it to Jfrog articatort as per the
-> Jenkins build number
+> Jenkins build number.
 
 ### Pipeline stages 
 
@@ -40,7 +40,7 @@ Jenkins Dashboard >> Manage Jenkins >> System
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/1e251488-33c2-46e4-9da1-e4412e578b35)
 
 
-### Working pipeline 
+### Working declarative code 
 ```
 pipeline{
     agent any
