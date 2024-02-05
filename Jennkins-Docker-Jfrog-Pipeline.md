@@ -90,6 +90,6 @@ pipeline{
 
 ### Output on jfrog 
 
-In above pipeline it is configured to store the docker image as per the jenkins build number on jefrog artifact
+In above pipeline it is configured to store the docker image as per the jenkins build number on jfrog artifact
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/43779421-4eda-40fc-add5-120995f7d8bc)
