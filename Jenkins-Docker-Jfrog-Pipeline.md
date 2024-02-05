@@ -22,6 +22,20 @@
 
 ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/3f0d07fd-ae40-42f8-a85b-22db294fc5e9)
 
+### Configure Jfrog user token in Jenkins 
+
+Jenkins Dashboard >> Manage Jenkins >>Credentials >>System >> Global credentials (unrestricted)
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/36df5d60-4967-4b6c-aba1-efb8f9dda1a4)
+
+### Configure Jfrog system in Jenkins 
+
+Jenkins Dashboard >> Manage Jenkins >> System
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/17599c20-0243-4f09-9fb8-2d9d9ce635cc)
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/1e251488-33c2-46e4-9da1-e4412e578b35)
+
 
 ### Working pipeline 
 ```
