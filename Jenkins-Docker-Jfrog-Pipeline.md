@@ -1,5 +1,8 @@
 # Docker image jfrog artifactory intigration using jenkins declarative pipeline
 
+> In this Ci-CD jenkins pipeline, we are building Docker image and pushing it to Jfrog articatort as per the
+> Jenkins build number
+
 ### Pipeline stages 
 
 1. Code Checkout
