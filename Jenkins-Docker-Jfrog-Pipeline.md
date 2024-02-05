@@ -73,8 +73,8 @@ pipeline{
             steps{
                 script{
                     sh "docker build -t $DOCKER_IMAGE ."
-                     \\ To build the docker image as defined in the Dockerfile from the git reposiroty, docker file will be stored as 
-                      per the jenkins $BUILD_NUMBER
+                     \\ To build the docker image as defined in the Dockerfile from the git reposiroty, docker file will be stored
+                        as per the jenkins $BUILD_NUMBER
                 }
             }
         }
