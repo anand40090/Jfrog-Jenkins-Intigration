@@ -63,7 +63,7 @@ pipeline{
         stage ('Code build'){
             steps{
                 sh 'mvn clean install'
-                 \\ Shell code to run the Maven test for the Git reposirty Java code
+                 \\ Shell command to run the Maven test for the Git reposirty Java code
             }
         }
         stage ('Package'){
@@ -76,7 +76,7 @@ pipeline{
             steps{
                 script{
                     sh "docker build -t $DOCKER_IMAGE ."
-                     \\ To build the docker image as defined in the Dockerfile from the git reposiroty, docker file will be stored
+                     \\ To build the docker image as defined in the Dockerfile from the git reposiroty, docker image will be build
                         as per the jenkins $BUILD_NUMBER
                 }
             }
