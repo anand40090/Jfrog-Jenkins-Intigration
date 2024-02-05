@@ -2,7 +2,12 @@
 
 ### Pipeline stages 
 
-
+1. Code Checkout
+2. Code build
+3. Code package
+4. Docker image Build
+5. Push docker image to Jfrog
+6. post - Sucess or Failure notification
 
 
  ![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/88c2e5cc-7388-4d0e-80b6-db6e9bf59e75)
