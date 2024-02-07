@@ -8,8 +8,9 @@
 
 # Run the gitlab Using Docker Compose
 
-[Follow to install and configure gitlab using docker](https://docs.gitlab.com/ee/install/docker.html)
+[Follow to install and configure gitlab using docker & Docker Compose](https://docs.gitlab.com/ee/install/docker.html)
 
+In this lab I have used docker compose to create the docker container 
 ```
 docker-compose.yml
 
