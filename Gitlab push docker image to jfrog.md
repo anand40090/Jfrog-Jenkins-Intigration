@@ -4,7 +4,7 @@
 ### Prerequisites
 1. Docker engine
 2. Latest Gitlab Docker image
-3. 
+
 
 # Run the gitlab Using Docker Compose
 
@@ -32,3 +32,18 @@ services:
     shm_size: '256m'
 
 ```
+
+Once docker container is up, run the below mentioned command to get the default root password 
+
+```
+sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+
+```
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/f7e0a5b8-5e8b-43fe-9fae-4708b8a38091)
+
+![image](https://github.com/anand40090/Jfrog-Jenkins-Intigration/assets/32446706/738c2b4d-49a7-4ba4-9572-a20cdb4a1a13)
+
+
+
+
