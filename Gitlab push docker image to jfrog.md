@@ -34,7 +34,8 @@ services:
 ```
 
 Once docker container is up, run the below mentioned command to get the default root password 
-Default user is root
+
+Default user is root and I have reset it "Hp@123!@#"
 ```
 sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
